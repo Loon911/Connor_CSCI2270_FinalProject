@@ -1,3 +1,3 @@
 # Connor_CSCI2270_FinalProject
 
-My final project is an mp3 player that plays local files on the computer, I am using the PortAudio mp3 player library since C++ does not have a built in library that suits my needs. You will be able to select specific songs, play next or previous song, and pause. I will be using a linked list to organize the songs that are playing.
+My final project is going to build on Homework 10. In homework 10 each city is safe, but there isn't a safe path going from city to city. In my project I am going to add the ability to travel within a certain city, within each city there will be stores for food, guns, shelter, hospitals. However the path to these locations are not all going to be safe so the program will show you the shortest most direct route you can take within the city.
