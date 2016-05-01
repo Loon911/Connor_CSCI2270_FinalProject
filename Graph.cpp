@@ -98,7 +98,7 @@ void Graph::shortestStorePath(string startS, string endS){
                 temp = temp->parent;
             }
             cout << n->distance << "," << startStore.store + "(" + startStore.name + ")";
-            for(int j = cities.size()-1; j >= 0; j--){
+            for(int j = cities.size() - 1.0; j >= 0; j--){
                 cout << "," << cities[j]->store + "(" + cities[j]->name + ")";
             }
             cout << endl;
@@ -117,7 +117,7 @@ void Graph::shortestStorePath(string startS, string endS){
         qv.path.pop_back();
         vector<adjVertex> temp;
         temp.swap(n->adj);
-        for(int i = temp.size()-1; i >= 0; i--){
+        for(int i = temp.size() - 1.0; i >= 0; i--){
             if(!temp[i].v->visited){
                 vertex *t = temp[i].v;
                 t->visited = true;
@@ -177,7 +177,7 @@ void Graph::shortestCityPath(string startC, string endC){
                 temp = temp->parent;
             }
             cout << n->distance << "," << startCity.name;
-            for(int j = cities.size()-1; j >= 0; j--){
+            for(int j = cities.size() - 1.0; j >= 0; j--){
                 cout << "," << cities[j]->name;
             }
             cout << endl;
@@ -196,7 +196,7 @@ void Graph::shortestCityPath(string startC, string endC){
         qv.path.pop_back();
         vector<adjVertex> temp;
         temp.swap(n->adj);
-        for(int i = temp.size()-1; i >= 0; i--){
+        for(int i = temp.size() - 1.0; i >= 0; i--){
             if(!temp[i].v->visited){
                 vertex *t = temp[i].v;
                 t->visited = true;
